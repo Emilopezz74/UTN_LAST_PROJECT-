@@ -125,7 +125,19 @@ html, body {
         display: none;
     }
 }
+@media (max-width:404px){
+    .title-header{
+        padding: 8px;
+        font-size: 25px;
+    }
+    .input {
+    color: white;
+    width: 100%}
+.icons-header-search{
 
+}
+    
+}
 /* .wsp-container-box {
 
     position: sticky;

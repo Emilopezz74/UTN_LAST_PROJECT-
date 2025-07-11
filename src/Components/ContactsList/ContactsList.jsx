@@ -34,8 +34,8 @@ const ContactsList = () => {
 
     <h1 className="title-header">WhatsApp HBO</h1>
     <div className="container-wsp-icon">
-            <IoMdMore style={{ fontSize: "45px", color: "#21c063" }} />
-    <RiChatNewFill style={{ fontSize: "45px", color: "#21c063" }} />
+            <IoMdMore style={{ fontSize: "40px", color: "#21c063" }} />
+    <RiChatNewFill style={{ fontSize: "40px", color: "#21c063" }} />
     </div>
     </header>
 
@@ -66,7 +66,7 @@ const ContactsList = () => {
         <div className="Container-main-options">
 
 <SiCircle size={45} color="#a3a3a3" style={{ cursor: "pointer" }} />
-<LuMessageCircleCode 
+<LuMessageCircleCode  
     size={45} 
     color="#a3a3a3" 
     style={{ cursor: "pointer" }} 
