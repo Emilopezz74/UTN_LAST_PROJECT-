@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+VN+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.container-chat-header{
+    position: static;
+}
+
+.chat-header{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: #144d37;
+    padding: 0 20px;
+    gap: 60px;
+}
+
+.img-contact-item-header{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.container-contact-information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; 
+}
+
+.chat-header a{
+    text-decoration: none;
+}
+
+.container-contact-connection{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-btn-go-home{
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-btn-go-home:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+.container-btn-go-home a{
+    color: #ffffff;
+}
+
+.container-multimedia-icon{
+    font-size: 25px;
+    color: #ffffff;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.contact-name{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.container-contact-connection span{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.container-call-video-icon{
+    font-size: 24px;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+@media (max-width: 530px){
+    .chat-header{
+        gap: 5px;
+    }
+}
+@media (max-width: 470px){
+    .container-btn-go-home{
+        font-size: 18px;
+    }
+    .contact-name{
+        font-size: 14px;
+    }
+    .container-contact-connection span{
+        font-size: 12px;
+    }
+    .container-multimedia-icon{
+        font-size: 18px;
+    }
+}
+@media (max-width: 390px){
+    .container-call-video-icon{
+        display: none;
+    }
+}
+@media (max-width: 335px){
+    .chat-header{
+        padding: 0 5px;
+    }
+}

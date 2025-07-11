@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+VN+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.img-contact-item{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.container-contact-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.container-contact-item:hover{
+    background-color:#6e6e6e ;
+    
+}
+.container-contact-name-message{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container-name-message{
+    display: flex;
+    flex-direction: column;
+
+}
+.container-contacts a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+.container-unread-messages-last-time-connected{
+    display: flex;
+    flex-direction: column;
+}
+.unread-messages{
+    background-color: #21c063;
+    color: #161717 ;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 65%;
+}
+.container-last-message{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(163, 163, 163);
+}
+.container-last-message-text-alternative{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .container-last-message-text-alternative{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .container-last-message{
+        display: none;
+    }
+}

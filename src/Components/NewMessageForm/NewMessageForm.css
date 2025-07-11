@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+VN+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+/* 🌱 Barra de escribir fija abajo */
+.container-form {
+    background-color: #242626;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #858686;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50; /* asegura estar encima */
+}
+
+/* 🌱 Texto a la izquierda */
+.container-form-text {
+    margin-left: 10px;
+}
+
+/* 🌱 Botón redondo verde */
+.container-btn-form {
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #21c063;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🌱 Área de texto */
+.textarea-container {
+    width: 80%;
+    background-color: #242626;
+    resize: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.textarea-container::placeholder {
+    color: #858686; 
+    opacity: 0.8;
+    font-size: 16px;
+} 
+
+/* 🌱 Botón de envío */
+.btn {
+    height: 20px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* 🌱 Mobile */
+@media (max-width: 490px) {
+    .textarea-container {
+        width: 70%;
+    }
+    .textarea-container::placeholder {
+        font-size: 12px;
+    }
+}
+
+/* 🌱 Lista de mensajes con espacio para la barra */
+.contacts-wrapper {
+    height: calc(100% - 100px); /* aumenta el espacio para que no tape */
+    overflow-y: auto;
+    padding-bottom: 90px; /* espacio adicional para evitar superposición */
+}
